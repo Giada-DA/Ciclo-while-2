@@ -6,9 +6,12 @@ public class Start {
         while(i>=0){
             System.out.println("Please enter a command:");
             Scanner scanner = new Scanner(System.in);
-            if(scanner.nextLine().equals("stop")){
+            String a = scanner.nextLine();
+            //System.out.println("Ops, you got the wrong command: " + a);
+            if(a.equals("stop")){
+                System.out.println("You entered: " + a);
                 break;
-            }
+            }else System.out.println("Ops, you got the wrong command: " + a);
 
 
         }
